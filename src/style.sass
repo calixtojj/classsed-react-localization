@@ -1,0 +1,37 @@
+$orange: #FF6200
+$black: #231F20
+$white: #fff
+$green: #609D6D
+$bluw: #2C648A
+$brown: #432D1E
+$beige: #F0E0A9
+    
+.item
+    position: relative
+    font-family: zeitung, sans-serif
+    font-style: normal
+    overflow: hidden
+    margin-bottom: 20px
+
+.item h4
+    display: inline-block
+    position: relative
+    font-size: 1rem
+    clear: both
+    padding-right: 5px
+    overflow-wrap: break-word
+
+.item span:first-of-type
+    background-image: linear-gradient(to right,rgba(56,47,47,.5) 33%,rgba(0,0,0,0) 0%)
+    background-position: bottom
+    background-size: 3px 1px
+    background-repeat: repeat-x
+    height: 1px
+    width: 100%
+    position: absolute
+    top: 22px
+
+.item span:nth-of-type(2n)
+    position: absolute
+    right: 0
+    z-index: 0

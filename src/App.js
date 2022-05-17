@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
 import classNames from 'classnames'
+import Price from './price.json'
+import './style.sass'
 
 const languages = [
   {
-    code: 'fr',
-    name: 'Français',
-    country_code: 'fr',
+    code: 'es',
+    name: 'Español',
+    country_code: 'es',
   },
   {
     code: 'en',
@@ -16,10 +18,9 @@ const languages = [
     country_code: 'gb',
   },
   {
-    code: 'ar',
-    name: 'العربية',
-    dir: 'rtl',
-    country_code: 'sa',
+    code: 'de',
+    name: 'Deutsch',
+    country_code: 'de',
   },
 ]
 
@@ -37,17 +38,11 @@ const GlobeIcon = ({ width = 24, height = 24 }) => (
 )
 
 export default function App() {
-  const currentLanguageCode = cookies.get('i18next') || 'en'
+  const currentLanguageCode = cookies.get('i18next') || 'es'
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
   const { t } = useTranslation()
 
-  const releaseDate = new Date('2021-03-07')
-  const timeDifference = new Date() - releaseDate
-  const number_of_days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
-
   useEffect(() => {
-    console.log('Setting page stuff')
-    document.body.dir = currentLanguage.dir || 'ltr'
     document.title = t('app_title')
   }, [currentLanguage, t])
 
@@ -94,9 +89,185 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-start">
-        <h1 className="font-weight-normal mb-3">{t('welcome_message')}</h1>
-        <p>{t('days_since_release', { number_of_days })}</p>
+      <div className="container">
+        <div className='row'>
+          <div className='col-12'>
+            <div className='text-center'>
+              <h1>{t('appetizers')}</h1>
+            </div>
+            <div className='row'>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('bread_with_tomato')}</h4>
+                  <span></span>
+                  <span>€ {Price.bread_with_tomato}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('anchovies_and_olives')}</h4>
+                  <span></span>
+                  <span>€ {Price.anchovies_and_olives}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('chicken_fingers')}</h4>
+                  <span></span>
+                  <span>€ {Price.chicken_fingers}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('charcuterie_platter')}</h4>
+                  <span></span>
+                  <span>€ {Price.charcuterie_platter}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('cheese_platter')}</h4>
+                  <span></span>
+                  <span>€ {Price.cheese_platter}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('mix_platter')}</h4>
+                  <span></span>
+                  <span>€ {Price.mix_platter}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('burrata_with_arugula_and_tomato')}</h4>
+                  <span></span>
+                  <span>€ {Price.burrata_with_arugula_and_tomato}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('burratina_with_arugula_and_tomato')}</h4>
+                  <span></span>
+                  <span>€ {Price.burratina_with_arugula_and_tomato}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('mozzarella_with_arugula_and_tomato')}</h4>
+                  <span></span>
+                  <span>€ {Price.mozzarella_with_arugula_and_tomato}</span>
+                </div>
+              </div>
+            </div>
+            <div className='text-center'>
+              <h1>{t('hummus')}</h1>
+            </div>
+            <div className='row'>
+             <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('clasic')}</h4>
+                  <span></span>
+                  <span>€ {Price.clasic}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('avocado_and_feta_cheese')}</h4>
+                  <span></span>
+                  <span>€ {Price.avocado_and_feta_cheese}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('eggplants')}</h4>
+                  <span></span>
+                  <span>€ {Price.eggplants}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('black_olives_and_anchovies_tapenade')}</h4>
+                  <span></span>
+                  <span>€ {Price.black_olives_and_anchovies_tapenade}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('assorted_hummus')}</h4>
+                  <span></span>
+                  <span>€ {Price.assorted_hummus}</span>
+                </div>
+              </div>
+            </div>
+            <div className='text-center'>
+              <h1>{t('croquetas_and_empanadillas')}</h1>
+            </div>
+            <div className='row'>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('chicken_croquettes')}</h4>
+                  <span></span>
+                  <span>€ {Price.chicken_croquettes}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('coxinhas')}</h4>
+                  <span></span>
+                  <span>€ {Price.coxinhas}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('kibe')}</h4>
+                  <span></span>
+                  <span>€ {Price.kibe}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('empanadilla_chicken_and_vegetables')}</h4>
+                  <span></span>
+                  <span>€ {Price.empanadilla_chicken_and_vegetables}</span>
+                </div>
+              </div>
+            </div>
+            <div className='text-center'>
+              <h1>{t('suggestions')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('vegetables_and_chicken_little_pies')}</h4>
+                  <span></span>
+                  <span>€ {Price.vegetables_and_chicken_little_pies}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('potato_and_meat_little_pies')}</h4>
+                  <span></span>
+                  <span>€ {Price.potato_and_meat_little_pies}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('rosemary_and_olive_oil_focaccia_with_mozzarella_and_tomato')}</h4>
+                  <span></span>
+                  <span>€ {Price.rosemary_and_olive_oil_focaccia_with_mozzarella_and_tomato}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('rosemary_and_olive_oil_focaccia_with_mozzarella_tomato_and_charcuterie')}</h4>
+                  <span></span>
+                  <span>€ {Price.rosemary_and_olive_oil_focaccia_with_mozzarella_tomato_and_charcuterie}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

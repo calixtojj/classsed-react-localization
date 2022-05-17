@@ -12,16 +12,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'flag-icon-css/css/flag-icon.min.css'
 
 i18next
-  .use(HttpApi)
-  .use(LanguageDetector)
   .use(initReactI18next)
+  .use(LanguageDetector)
+  .use(HttpApi)
   .init({
-    supportedLngs: ['en', 'ar', 'fr'],
-    fallbackLng: 'en',
-    debug: false,
+    supportedLngs: ['es', 'en', 'de'],
+    fallbackLng: 'es',
     // Options for language detector
     detection: {
-      order: ['path', 'cookie', 'htmlTag'],
+      order: ['cookie', 'localstorage', 'path', 'htmlTag', 'subdomain'],
       caches: ['cookie'],
     },
     // react: { useSuspense: false },
