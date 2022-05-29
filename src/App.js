@@ -240,6 +240,20 @@ export default function App() {
             <div className='row'>
             <div className='col-sm-6 col-md-4'>
                 <div className='item'>
+                  <h4>{t('picanha')}</h4>
+                  <span></span>
+                  <span>€ {Price.picanha}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('wok')}</h4>
+                  <span></span>
+                  <span>€ {Price.wok}</span>
+                </div>
+              </div>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
                   <h4>{t('vegetables_and_chicken_little_pies')}</h4>
                   <span></span>
                   <span>€ {Price.vegetables_and_chicken_little_pies}</span>
@@ -267,6 +281,458 @@ export default function App() {
                 </div>
               </div>
             </div>
+
+
+
+            <div className='text-center'>
+              <h1>{t('soda_spirit_combo')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('gin_seagrans')}</h4>
+                  <span></span>
+                  <span>€ {Price.gin_seagrans}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('gin_beefeater')}</h4>
+                  <span></span>
+                  <span>€ {Price.gin_beefeater}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('ballantines')}</h4>
+                  <span></span>
+                  <span>€ {Price.ballantines}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('johnnie_walker_red')}</h4>
+                  <span></span>
+                  <span>€ {Price.johnnie_walker_red}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('ron_barcelo')}</h4>
+                  <span></span>
+                  <span>€ {Price.ron_barcelo}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('vodka_smirnoff')}</h4>
+                  <span></span>
+                  <span>€ {Price.vodka_smirnoff}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('hierbas')}</h4>
+                  <span></span>
+                  <span>€ {Price.hierbas}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('martini_rojo')}</h4>
+                  <span></span>
+                  <span>€ {Price.martini_rojo}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('martini_blanco')}</h4>
+                  <span></span>
+                  <span>€ {Price.martini_blanco}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('baileys')}</h4>
+                  <span></span>
+                  <span>€ {Price.baileys}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('tequila')}</h4>
+                  <span></span>
+                  <span>€ {Price.tequila}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('sangria')}</h4>
+                  <span></span>
+                  <span>€ {Price.sangria}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('mojito')}</h4>
+                  <span></span>
+                  <span>€ {Price.mojito}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('caipirinha')}</h4>
+                  <span></span>
+                  <span>€ {Price.caipirinha}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('aperol_spritz')}</h4>
+                  <span></span>
+                  <span>€ {Price.aperol_spritz}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('white_wine')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('oro_de_castilla')}</h4>
+                  <span></span>
+                  <span>€ {Price.oro_de_castilla}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('w3015')}</h4>
+                  <span></span>
+                  <span>€ {Price.w3015}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('cava_brut')}</h4>
+                  <span></span>
+                  <span>€ {Price.cava_brut}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('red_wine')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('marques_ulia_crianza')}</h4>
+                  <span></span>
+                  <span>€ {Price.marques_ulia_crianza}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('el_maquinista')}</h4>
+                  <span></span>
+                  <span>€ {Price.el_maquinista}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('real_rubio_crianza')}</h4>
+                  <span></span>
+                  <span>€ {Price.real_rubio_crianza}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('el_goru')}</h4>
+                  <span></span>
+                  <span>€ {Price.el_goru}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('rose_wine')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('real_rubio')}</h4>
+                  <span></span>
+                  <span>€ {Price.real_rubio}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('chateau_pigoudet')}</h4>
+                  <span></span>
+                  <span>€ {Price.chateau_pigoudet}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('cava_rosado')}</h4>
+                  <span></span>
+                  <span>€ {Price.cava_rosado}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('house_wine')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('white')}</h4>
+                  <span></span>
+                  <span>€ {Price.white}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('red')}</h4>
+                  <span></span>
+                  <span>€ {Price.red}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('rose')}</h4>
+                  <span></span>
+                  <span>€ {Price.rose}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('beer')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('alhambra_33cl')}</h4>
+                  <span></span>
+                  <span>€ {Price.alhambra_33cl}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('alhambra_22cl')}</h4>
+                  <span></span>
+                  <span>€ {Price.alhambra_22cl}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('alhambra_reserva_1925')}</h4>
+                  <span></span>
+                  <span>€ {Price.alhambra_reserva_1925}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('alhambra_0')}</h4>
+                  <span></span>
+                  <span>€ {Price.alhambra_0}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('alhambra_ipa')}</h4>
+                  <span></span>
+                  <span>€ {Price.alhambra_ipa}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('warsteiner')}</h4>
+                  <span></span>
+                  <span>€ {Price.warsteiner}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('budweiser')}</h4>
+                  <span></span>
+                  <span>€ {Price.budweiser}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('estrella_galicia')}</h4>
+                  <span></span>
+                  <span>€ {Price.estrella_galicia}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('estrella_1906_red_vintage')}</h4>
+                  <span></span>
+                  <span>€ {Price.estrella_1906_red_vintage}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('corona')}</h4>
+                  <span></span>
+                  <span>€ {Price.corona}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('to_drink')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('sparkling_water_magma')}</h4>
+                  <span></span>
+                  <span>€ {Price.sparkling_water_magma}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('mineral_water_magma')}</h4>
+                  <span></span>
+                  <span>€ {Price.mineral_water_magma}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('nordic_tonic_water')}</h4>
+                  <span></span>
+                  <span>€ {Price.nordic_tonic_water}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('nestea')}</h4>
+                  <span></span>
+                  <span>€ {Price.nestea}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('aquarius')}</h4>
+                  <span></span>
+                  <span>€ {Price.aquarius}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('coke')}</h4>
+                  <span></span>
+                  <span>€ {Price.coke}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('coke_zero')}</h4>
+                  <span></span>
+                  <span>€ {Price.coke_zero}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('fanta')}</h4>
+                  <span></span>
+                  <span>€ {Price.fanta}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('sprite')}</h4>
+                  <span></span>
+                  <span>€ {Price.sprite}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('desserts')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('lemon_ice_cream')}</h4>
+                  <span></span>
+                  <span>€ {Price.lemon_ice_cream}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('straciatella_ice_cream')}</h4>
+                  <span></span>
+                  <span>€ {Price.straciatella_ice_cream}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('tiramisu_cup')}</h4>
+                  <span></span>
+                  <span>€ {Price.tiramisu_cup}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('chocolat_coulant')}</h4>
+                  <span></span>
+                  <span>€ {Price.chocolat_coulant}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('cheese_and_blueberry_clouds')}</h4>
+                  <span></span>
+                  <span>€ {Price.cheese_and_blueberry_clouds}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className='text-center'>
+              <h1>{t('coffees')}</h1>
+            </div>
+            <div className='row'>
+            <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('expresso_coffee')}</h4>
+                  <span></span>
+                  <span>€ {Price.expresso_coffee}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('cortado')}</h4>
+                  <span></span>
+                  <span>€ {Price.cortado}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('coffee_with_milk')}</h4>
+                  <span></span>
+                  <span>€ {Price.coffee_with_milk}</span>
+                </div>
+              </div>
+              <div className='col-sm-6 col-md-4'>
+                <div className='item'>
+                  <h4>{t('american_coffee')}</h4>
+                  <span></span>
+                  <span>€ {Price.american_coffee}</span>
+                </div>
+              </div>
+            </div>
+
+            
+
+
           </div>
         </div>
       </div>
